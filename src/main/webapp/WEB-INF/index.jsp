@@ -40,6 +40,18 @@
 			</div>
 			<div class="col-6">
 				<h2>Inicia Sesión</h2>
+				<p class="text-danger">${error_login}</p>
+				<form action="/login" method="post">
+					<div>
+						<label>E-mail</label>
+						<input type="text" class="form-control" name="email" />
+					</div>
+					<div>
+						<label>Password</label>
+						<input type="password" class="form-control" name="contrasena" />
+					</div>
+					<input type="submit" class="btn btn-info mt-3" value="Inicia Sesión" />
+				</form>
 			</div>
 		</div>
 	</div>
